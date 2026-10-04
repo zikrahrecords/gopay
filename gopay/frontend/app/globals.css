@@ -1,0 +1,10 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { @apply bg-[#fff6e6] text-ink; font-family: system-ui, sans-serif; }
+@layer components {
+  .card { @apply rounded-2xl bg-white p-3.5 shadow-[0_4px_14px_rgba(120,40,20,.1)]; }
+  .btn { @apply block w-full rounded-xl bg-pri px-4 py-3 text-center font-semibold text-white disabled:opacity-50; }
+  .btn-o { @apply block w-full rounded-xl bg-soft px-4 py-3 text-center font-semibold text-pri; }
+  .inp { @apply w-full rounded-xl border-2 border-soft bg-white p-3; }
+  .badge { @apply rounded-full bg-soft px-2.5 py-0.5 text-xs font-semibold text-[#8a5a00]; }
+  .err { @apply text-sm text-red-700; }
+}
